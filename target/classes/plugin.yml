@@ -1,0 +1,14 @@
+name: RenamePlease
+main: org.herosteve.MyPlugin #建议重新对主类命名，即修改MyPlugin
+version: 1.0-SNAPSHOT #插件版本
+api-version: 1.15 #依赖的bukkit-api版本，决定如何加载插件
+#以上为插件的基本信息，以下为命令注册
+commands:
+  superkill:
+    aliases:
+      - "skill"
+      - "sk"
+    usage: "/superkill <player-name>"
+    description: "Kill some player"
+    permission: "minecraft.command.kill" #执行命令所需要的权限
+    permission-message: "Only killer can do that" #无权限时返回的消息
